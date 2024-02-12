@@ -1,0 +1,19 @@
+.home
+{
+background-color: #1ABC9C ;
+height: 85%;
+}
+
+img
+{
+  width: 250px;
+}
+
+.half-line{
+  width: 50px;
+height: 5px;
+background-color: white;
+margin-top: 5px;
+}
+
+

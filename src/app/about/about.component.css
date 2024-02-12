@@ -1,0 +1,13 @@
+.about
+{
+  background-color: #1ABC9C;
+  height: 85%;
+}
+.half-line{
+  width: 50px;
+height: 5px;
+background-color: white;
+margin-top: 5px;
+}
+
+

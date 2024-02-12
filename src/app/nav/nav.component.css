@@ -1,0 +1,21 @@
+.navbar
+{
+  background-color: #2C3E50;
+}
+
+a.nav-link ,
+a.navbar-brand
+{
+  color: white;
+}
+
+/* :root
+{
+  --bg-hover:#1ABC9C;
+} */
+
+
+.main-color
+{
+  background-color:#1ABC9C ;
+}

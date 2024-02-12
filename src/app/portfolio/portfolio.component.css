@@ -1,0 +1,60 @@
+.portfolio
+{
+  height: 85%;
+}
+.half-line{
+  width: 50px;
+height: 5px;
+margin-top: 5px;
+}
+
+
+
+.layer
+{
+  cursor: pointer;
+}
+
+
+img{
+  border-radius: 10px;
+}
+.layer{
+  background-color: #1ABC9C;
+  width: 100%;
+  height: 100%;
+  border-radius : 10px;
+  left: 0;
+  top: 0;
+  opacity: 0;
+transition: all 1s;
+}
+.col-md-4:hover .layer{
+  opacity: 0.8;
+}
+.row i{
+  font-size: 96px;
+  font-weight: 900;
+}
+
+
+.expanded-image-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.expanded-image {
+  margin-top:6.25rem; ;
+  max-width: 70%;
+  max-height: 70%;
+  border-radius: 10px;
+  z-index: 10000000;
+}

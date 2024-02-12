@@ -1,0 +1,27 @@
+<div class="contact mt-5 py-5">
+  <div class="container pt-5">
+    <div class="contactTitle text-center">
+      <h1>CONATCT SECTION</h1>
+    </div>
+    <div class="under-line d-flex justify-content-center my-3">
+      <div class="half-line bg-black"></div>
+      <i class="fa-solid fa-star mx-2"></i>
+      <div class="half-line bg-black"></div>
+  </div>
+    <form class="mx-auto w-50 mt-5">
+      <label *ngIf="userNameTyped" for="userName" class="main-color" >userName : </label>
+      <input (keydown)="userNameTyped = true" (blur)="userNameTyped=false" type="text" id="userName" name="userName" placeholder="userName" class="form-control border-0 border-bottom py-3 my-4">
+
+      <label *ngIf="userAgeTyped" for="userAge" class="main-color">userAge : </label>
+      <input (keydown)="userAgeTyped = true" (blur)="userAgeTyped=false" type="text" id="userAge" name="userAge" placeholder="userAge" class="form-control border-0 border-bottom py-3 my-4">
+
+      <label *ngIf="userEmailTyped" for="userEmail" class="main-color">userEmail : </label>
+      <input (keydown)="userEmailTyped = true" (blur)="userEmailTyped=false" type="text" id="userEmail" name="userEmail" placeholder="userEmail" class="form-control border-0 border-bottom py-3 my-4">
+
+      <label *ngIf="userPasswordTyped" for="userPassword" class="main-color">userPassword : </label>
+      <input (keydown)="userPasswordTyped = true" (blur)="userPasswordTyped=false" type="text" id="userPassword" name="userPassword" placeholder="userPassword" class="form-control border-0 border-bottom py-3 my-4">
+
+      <button class="btn mt-4 text-white"> send Message </button>
+    </form>
+  </div>
+</div>

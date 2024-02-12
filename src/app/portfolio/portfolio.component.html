@@ -1,0 +1,27 @@
+<div class="portfolio mt-5 py-5">
+  <div class="container pt-5">
+    <div class="portflioTitle text-center">
+      <h1>PORTFOLIO COMPONENT</h1>
+    </div>
+    <div class="under-line d-flex justify-content-center my-3">
+      <div class="half-line bg-black"></div>
+      <i class="fa-solid fa-star mx-2"></i>
+      <div class="half-line bg-black"></div>
+  </div>
+    <div class="row g-5">
+      <div *ngFor="let image of images" class="col-md-4 ">
+        <div class="position-relative"  (click)="expandImage(image)">
+          <img [src]="image.src" class="w-100 rounded-2" alt="">
+        <div class="layer position-absolute d-flex justify-content-center align-items-center">
+          <i class="fa-solid fa-plus text-white"></i>
+      </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div *ngIf="expandedImage" class="expanded-image-container" (click)="closeExpandedImage()">
+  <img [src]="expandedImage" class="expanded-image" alt="">
+</div>
